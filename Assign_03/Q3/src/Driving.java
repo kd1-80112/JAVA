@@ -1,0 +1,68 @@
+import java.util.Scanner;
+
+//Q3. Create an application that calculates your daily driving cost, so that you can estimate how much
+//money could be saved by car pooling, which also has other advantages such as reducing carbon
+//emissions and reducing traffic congestion. The application should input the following information
+//and display the user’s cost per day of driving to work:
+//a) Total miles driven per day.
+//b) Cost per gallon of gasoline.
+//c) Average miles per gallon.
+//d) Parking fees per day.
+//e) Tolls per day.
+public class Driving {
+	private double totalMiles;
+	private double costpergallon;
+	private double avgmilespergallon;
+	private double parkingfees;
+	private double tolls;
+
+	Driving() {
+
+	}
+
+	public void acceptdata() {
+		System.out.println("enter total miles=");
+		this.totalMiles = new Scanner(System.in).nextDouble();
+		System.out.println("enter cost per gallon=");
+		this.costpergallon = new Scanner(System.in).nextDouble();
+		System.out.println("enter averge miles per gallon=");
+		this.avgmilespergallon = new Scanner(System.in).nextDouble();
+		System.out.println("enter prking fees=");
+		this.parkingfees = new Scanner(System.in).nextDouble();
+		System.out.println("enter toll amount=");
+		this.tolls = new Scanner(System.in).nextDouble();
+
+	}
+
+	public void drivingcost() {
+		double totalcost = (this.totalMiles / this.avgmilespergallon) * this.costpergallon + this.parkingfees
+				+ this.tolls;
+		System.out.println("total cost without pooling=" + totalcost);
+	}
+
+	public void displydata() {
+		System.out.println("total miles=" + this.totalMiles);
+		System.out.println("cost per gallon" + this.costpergallon);
+		System.out.println("averge miles per gallon=" + this.avgmilespergallon);
+		System.out.println("prking fees=" + this.parkingfees);
+		System.out.println("toll amount=" + this.tolls);
+
+	}
+
+	public void carpooling() {
+		System.out.println("pooling members=");
+		int members = new Scanner(System.in).nextInt();
+		double totalcost = (this.totalMiles / this.avgmilespergallon) * this.costpergallon + this.parkingfees
+				+ this.tolls;
+		System.out.println("total cost with pooling=" + totalcost / members);
+
+	}
+
+	public static void main(String[] args) {
+		Driving d1 = new Driving();
+		d1.acceptdata();
+		d1.displydata();
+		d1.drivingcost();
+		d1.carpooling();
+	}
+}

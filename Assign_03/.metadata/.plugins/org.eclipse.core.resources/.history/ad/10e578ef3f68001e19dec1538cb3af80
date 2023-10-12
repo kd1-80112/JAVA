@@ -1,0 +1,44 @@
+package com.app.geometry;
+
+import java.util.Scanner;
+
+public class Point2D {
+	int x;
+	int y;
+
+	public Point2D(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	public void accept() {
+		System.out.println("enter x=");
+		this.x = new Scanner(System.in).nextInt();
+		System.out.println("enter y=");
+		this.y = new Scanner(System.in).nextInt();
+	}
+
+	public String getDetails(Point2D p) {
+		System.out.println("P1=");
+		System.out.println(this.x + " " + this.y);
+		System.out.println("p2=");
+		System.out.println(p.x + " " + p.y);
+		return null;
+
+	}
+
+	public boolean isEqual(Point2D p) {
+		if (this.x == p.x && this.y == p.y) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+	public double calculateDistance(Point2D p) {
+		return Math.sqrt(Math.pow((p.x - this.x), 2) + Math.pow((p.y - this.x), 2));
+
+	}
+
+}
