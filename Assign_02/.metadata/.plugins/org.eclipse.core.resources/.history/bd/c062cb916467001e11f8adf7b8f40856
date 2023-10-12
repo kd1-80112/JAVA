@@ -1,0 +1,12 @@
+package com.app.tester;
+import com.app.geometry.*;
+
+public class TestPoint 
+{
+	public static void main(String[] args) 
+	{
+		Point2D p1=new Point2D(3,4);
+		
+	}
+
+}

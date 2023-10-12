@@ -1,0 +1,10 @@
+
+public class Invoice {
+	String partNumber;
+	String PartDescription;
+	int quantity;
+	double price;
+
+	public Invoice() {
+	}
+}

@@ -1,0 +1,13 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee("Bruce", "wayne", (double) 1000);
+		Employee e2 = new Employee("Walter", "white", (double) 5000);
+		e1.displayEmployee();
+		e2.displayEmployee();
+		System.out.println("after 10% raise");
+		double newsalary=e1.getSalary()+e1.getsalary()*10/100;
+		}
+
+}

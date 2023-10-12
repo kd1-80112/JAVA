@@ -1,0 +1,28 @@
+package com.app.geometry;
+
+public class Point2D {
+	int x;
+	int y;
+
+	Point2D(int x, int y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	public String getDetails() {
+	    return Integer.toString(this.x, this.y);
+
+	}
+
+	public boolean isEqual( Point2D p) {
+		if (this.x==p.x && this.y==p.y) {
+			return true;
+		} else {
+			return false;
+		}
+
+	}
+
+	public
+
+}

@@ -1,0 +1,9 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+		Employee e1 = new Employee("Bruce", "wayne", (double) 1000);
+		Employee e2 = new Employee("Walter", "white", (double) 5000);
+	}
+
+}

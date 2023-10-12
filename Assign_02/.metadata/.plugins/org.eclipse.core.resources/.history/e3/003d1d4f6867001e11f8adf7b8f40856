@@ -1,0 +1,23 @@
+package com.app.tester;
+
+import com.app.geometry.Point2D;
+
+public class TestPoint {
+	public static void main(String[] args) {
+		Point2D p1 = new Point2D(3, 4);
+		Point2D p2 = new Point2D(1, 2);
+
+		p1.getDetails(p2);
+		System.out.print("point p2=");
+
+		System.out.println(p1.equals(p2));
+		if (p1.equals(p2) == true) {
+			System.out.println("points are at same position");
+		} else {
+			System.out.println("distance between p1,p2");
+			System.out.println(p1.calculateDistance(p2));
+		}
+
+	}
+
+}

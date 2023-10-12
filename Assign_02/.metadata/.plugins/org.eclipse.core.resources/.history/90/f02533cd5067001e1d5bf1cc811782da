@@ -1,0 +1,11 @@
+
+public class EmployeeTest {
+
+	public static void main(String[] args) {
+	   Employee e1=new employee();
+	   Employee e1("Bruce","Wayne",1000);
+	   
+
+	}
+
+}

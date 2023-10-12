@@ -1,0 +1,15 @@
+
+public class DateTest {
+
+	public static void main(String[] args) {
+		Date d1 = new Date(1, 01, 1990);
+		d1.displayDate();
+		d1.setDay(12);
+		d1.setMonth(12);
+		d1.setYear(1990);
+	    System.out.println("new Date=");
+	    System.out.println(d1.getDay()+"/"+d1.getMonth()+"/"+d1.getYear());
+
+	}
+
+}

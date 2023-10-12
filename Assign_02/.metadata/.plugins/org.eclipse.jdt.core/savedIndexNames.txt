@@ -1,0 +1,2 @@
+INDEX VERSION 1.131+/home/sunbeam/sts_java/Assign_02/.metadata/.plugins/org.eclipse.jdt.core
+1865797976.index
