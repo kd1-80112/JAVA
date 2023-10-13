@@ -1,0 +1,13 @@
+package com.app.fruits;
+
+public class Mango extends Fruit
+{
+ private String taste;
+
+public Mango(String color, double weight, String name, boolean isFresh, string taste) {
+	super(color, weight, name, isFresh);
+	this.taste = taste;
+}
+ 
+ 
+}
