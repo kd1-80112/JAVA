@@ -1,0 +1,29 @@
+package com.sunbeam;
+
+import java.util.Scanner;
+
+public class Person implements Displyable {
+	private String name;
+	private int age;
+
+	public void accept() {
+		System.out.println("enter name=");
+		name = new Scanner(System.in).next();
+		System.out.println("enter age=");
+		age = new Scanner(System.in).nextInt();
+
+	}
+
+	@Override
+	public void Display() {
+		System.out.println(" name=" + name);
+		System.out.println(" age=" + age);
+
+	}
+
+	public void display() {
+		// TODO Auto-generated method stub
+
+	}
+
+}

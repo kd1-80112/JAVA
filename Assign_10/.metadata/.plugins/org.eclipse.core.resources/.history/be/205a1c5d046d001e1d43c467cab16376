@@ -1,0 +1,13 @@
+package com.sunbeam;
+
+public class Main {
+	public static void printdisplaybox() {
+		Generic_Person<Person> b = new Generic_Person<Person>();
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

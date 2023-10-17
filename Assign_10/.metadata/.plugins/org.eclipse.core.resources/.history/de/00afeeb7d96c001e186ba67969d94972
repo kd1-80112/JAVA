@@ -1,0 +1,16 @@
+package com.sunbeam.person;
+
+public class Manager extends Employee {
+private int bonus;
+
+public void accept()
+{
+	accept();
+}
+	@Override
+	public void calcTotalSalary() {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

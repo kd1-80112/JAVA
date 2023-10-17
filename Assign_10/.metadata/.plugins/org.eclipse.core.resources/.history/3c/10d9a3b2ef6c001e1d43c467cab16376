@@ -1,0 +1,13 @@
+package com.sunbeam;
+
+public class Main {
+	public static void printdisplaybox(Generic_Person<? extends Displyable> b) 
+	{
+     b.get().display();
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

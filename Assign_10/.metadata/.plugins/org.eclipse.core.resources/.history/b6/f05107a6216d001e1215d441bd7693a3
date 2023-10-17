@@ -1,0 +1,37 @@
+package com.sunbeam;
+
+public class Main {
+	public static void printdisplaybox(Generic_Class<? extends Displyable> GC) {
+		GC.get().display();
+
+	}
+
+	public static void printAnyBox(Generic_Class<?> GAC) {
+GAC.get().toString();
+	}
+
+	public static void main(String[] args) {
+		Generic_Class<Date> D = new Generic_Class<Date>();
+		D.set(new Date(1, 1, 2001));
+//		D.get();
+//		D.get().display();
+		printdisplaybox(D);
+		D.get().setDay(10);
+		D.get().setMonth(05);
+		D.get().setYear(2099);
+//		D.get().display();
+		printdisplaybox(D);
+
+		Generic_Class<Person> P = new Generic_Class<Person>();
+
+		P.set(new Person());
+		P.get().accept();
+		P.get().display();
+//		printdisplaybox(P);
+
+		Generic_Class<String> S = new Generic_Class<String>();
+		S.set(new String("Harvy"));
+		printAnyBox(S);
+	}
+
+}

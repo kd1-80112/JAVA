@@ -1,0 +1,19 @@
+package com.sunbeam;
+
+public class Main {
+	public static void printdisplaybox(Generic_Person<? extends Displyable> GP) {
+
+	}
+
+	public static void main(String[] args) {
+		Generic_Person<Date> D = new Generic_Person<Date>();
+		D.set(new Date());
+		D.get();
+		D.get().setDay(10);
+		D.get().setMonth(05);
+		D.get().setYear(2099);
+		D.get().display();
+
+	}
+
+}

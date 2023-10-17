@@ -1,0 +1,10 @@
+package com.sunbeam.person;
+
+public class Generic_Box<T extends Employee> {
+
+	public static void main(String[] args) {
+		Generic_Box<Manager> m=new Generic_Box<Manager>();
+
+	}
+
+}

@@ -1,0 +1,13 @@
+package com.sunbeam.person;
+
+public class Employee extends Person {
+	private int id;
+	private int sal;
+	
+	public void accept()
+	{
+		System.out.println("enter id=");
+		id=new Scanner(System.in).nextInt();
+	}
+
+}

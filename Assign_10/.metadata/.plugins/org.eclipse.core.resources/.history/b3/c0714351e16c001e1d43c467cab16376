@@ -1,0 +1,10 @@
+package com.sunbeam.person;
+
+public class Generic_Box<T extends Employee> {
+
+	private T obj;
+		
+
+	}
+
+}

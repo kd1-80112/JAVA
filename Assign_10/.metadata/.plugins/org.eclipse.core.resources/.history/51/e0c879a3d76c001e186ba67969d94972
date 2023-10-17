@@ -1,0 +1,11 @@
+package com.sunbeam.person;
+
+public class Person {
+private string name;
+private int age;
+public void acceptData()
+{
+	System.out.println("enter name=");
+	name=new Scanner(system.in).next();
+}
+}

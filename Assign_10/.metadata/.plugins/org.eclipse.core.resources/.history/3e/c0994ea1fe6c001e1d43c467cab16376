@@ -1,0 +1,12 @@
+package com.sunbeam;
+
+public class Main {
+	public static void printdisplaybox() {
+		Generic_Person<? extends Displyable> b = new Generic_Person<? extends Displyable>();
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

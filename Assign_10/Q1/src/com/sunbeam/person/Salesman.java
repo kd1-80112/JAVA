@@ -1,0 +1,26 @@
+package com.sunbeam.person;
+
+import java.util.Scanner;
+
+public class Salesman extends Employee {
+private int commision;
+
+public void accept()
+{
+super.accept();
+System.out.println("enter comm=");
+commision=new Scanner(System.in).nextInt();
+}
+public void display()
+{
+super.display();
+System.out.println("comm="+this.commision);
+}
+
+
+@Override
+public void calcTotalSalary() {
+	System.out.println("salesman salary="+(super.getSal()+this.commision));
+	
+}
+}

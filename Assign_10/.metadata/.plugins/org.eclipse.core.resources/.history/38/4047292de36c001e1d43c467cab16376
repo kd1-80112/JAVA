@@ -1,0 +1,23 @@
+package com.sunbeam.person;
+
+public class Generic_Box<T extends Employee> {
+
+	private T obj;
+	public void set(T val)
+	{
+		this.obj=val;
+		
+
+	}
+	public T get()
+	{
+		return this.obj;
+	}
+//	public  getSalary()
+//	{
+//		return obj.calcTotalSalary();
+//		
+//	}
+	
+
+}
